@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriedFireAnt</title>
+
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- custom css file, overrides bootstrap-->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+    <!-- Start header area-->
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="logo" href="index.html"><img src="./img/Logo.png" alt="logo" height="100"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <div class="me-auto"></div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="index.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="commisionedwork.html">Commisioned Work</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li> -->
+                      <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <!-- End header area-->
+
+    <!-- Start main area-->
+    <main class="site-main">
+
+      <!-- Start banner area-->
+      <!-- <section class="site-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 site-title">
+              <h3 class="title-text">Hi</h3>
+              <h1 class="title-text">I'm FriedFireAnt</h1>
+              <h4 class="title-text text-uppercase">Graphic Designer</h1>
+              <div class="site-buttons">
+                <div class="d-flex flex-row flex-wrap">
+                  <button type="button" class="btn button primary-button me-4">See my work</button>
+                  <button type="button" class="btn button primary-button me-4">Hire me</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 banner-image">
+              <img src="./img/portfolio/2C591DB4-1F95-45EE-A496-AEC352B601FA.png" alt="banner image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End banner area-->
+
+
+
+      <!-- Portfolio area -->
+      <section class="portfolio-area">
+        <div class="container">
+          <div class="portfolio-title pb-5">
+            <h1 class="title-h1">Portfolio</h1>
+          </div>
+
+          <div class="button-group" id="myBtnContainer">
+            <button type="button" class="filter" onclick="filterSelection('all')">All</button>
+            <button type="button" class="filter" onclick="filterSelection('character-art')">Character art</button>
+            <button type="button" class="filter" onclick="filterSelection('studies')">Studies</button>
+            <button type="button" class="filter" onclick="filterSelection('concept-art')">Concept art</button>
+            <button type="button" class="filter" onclick="filterSelection('paintings')">Paintings</button>
+          </div>
+
+          <!-- images -->
+          <div class="masonry">
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/1.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images studies">
+                <img src="./img/portfolio/2.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/3.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images concept-art">
+                <img src="./img/portfolio/4.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/5.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images concept-art">
+                <img src="./img/portfolio/6.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images concept-art">
+                <img src="./img/portfolio/7.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/8.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images concept-art">
+                <img src="./img/portfolio/9.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images paintings">
+                <img src="./img/portfolio/10.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/11.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/12.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images paintings">
+                <img src="./img/portfolio/13.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images studies">
+                <img src="./img/portfolio/14.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images concept-art">
+                <img src="./img/portfolio/15.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images studies">
+                <img src="./img/portfolio/16.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images paintings">
+                <img src="./img/portfolio/17.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images concept-art">
+                <img src="./img/portfolio/18.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images paintings">
+                <img src="./img/portfolio/19.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/20.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images studies">
+                <img src="./img/portfolio/21.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/22.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images character-art">
+                <img src="./img/portfolio/23.png" alt="Portfolio image">
+            </div>
+
+            <div class="grid-images concept-art">
+                <img src="./img/portfolio/24.png" alt="Portfolio image">
+            </div>
+
+    
+
+        </div>
+
+
+
+        </div>
+      </section>
+      <!-- End portfolio area -->
+
+    </main>
+    <!-- End main area-->
+
+
+
+    <!-- Jquery js file -->
+    <script src="./js/jquery.3.6.0.js"></script>
+
+    <!-- Bootstrap js file -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Custom js file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

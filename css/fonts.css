@@ -1,0 +1,13 @@
+/* fonts */
+@font-face{
+    src: url(../fonts/Alone\ On\ Earth.otf);
+    font-family: alone-on-earth;
+}
+@font-face{
+    src: url(../fonts/menlotus.ttf);
+    font-family: menlotus;
+}
+@font-face{
+    src: url(../fonts/traho.ttf);
+    font-family: traho;
+}
