@@ -12,12 +12,13 @@
     padding: 0 2rem 0 5rem;
 } */
 
-.header_area .main-menu .navbar{
-    padding: 1rem 17rem;
+.header_area .main-menu .navbar {
+    margin: 0 auto 0 auto;
+    width: 1350px;
 }
 
 /* navbar items*/
-.header_area .main-menu .nav-item .nav-link{
+.header_area .main-menu .nav-item .nav-link {
     font-family: var(--font);
     font-size: 19px;
     font-weight: 900;
@@ -25,96 +26,42 @@
     color: black;
 }
 
-.header_area .main-menu .navbar-nav .active a{
+.header_area .main-menu .navbar-nav .active a {
     /* color: rgba(233,157,193,255); */
     color: var(--primary-color);
 
     background-clip: text;
 }
 
-.header_area .main-menu .navbar-nav a:hover{
-    color: rgba(233,157,193,255);
+.header_area .main-menu .navbar-nav a:hover {
+    color: rgba(233, 157, 193, 255);
 
     background-clip: text;
 }
+
 /* end nav */
 
 
-
-/* Bannner area*/
-/* .site-main .site-banner {
-    /* Achtergrond van de banner
-    background: url(../img/portfolio/267FF923-0C9A-4703-933E-E944101A963A.png) no-repeat;
-    background-position: 0% 60%;
-    
-}
-
-.site-main .site-banner .site-title h3::after{
-    content:" ";
-    height: 2px;
-    width: 18vw;
-    background:black;
-    display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
-}
-
-.site-main .site-banner .site-title h1{
-    font-size: 3rem;
-}
-.site-main .site-banner .site-title h3{
-    font-size: 1rem;
-}
-.site-main .site-banner .site-title h4{
-    font-size: 1.5rem;
-}
-.site-main .site-banner .banner-image img{
-    padding: 7rem 0;
-    width: 90rem;
-}
-
-.title-text{
-    font: normal bold 50px/ 72px Verdana;
-} */
-/* End Bannner area*/
-
-
-/* Portfolio area */
-/* .container {
-    overflow: hidden;
-  } */
-  
-  /* .filterDiv {
-    float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px;
-    display: none; Hidden by default 
-  } 
-  */
-  
-  
-.grid-images{
+.grid-images {
     /* width: 100%; */
     /* height:100%; */
     /* box-shadow: 3px 3px 5px -4px #c4437d; */
     display: none;
 
 }
-  /* The "show" class is added to the filtered elements */
+
+/* The "show" class is added to the filtered elements */
 .show {
     display: inline-block;
 }
-.site-main .portfolio-area{
+
+.site-main .portfolio-area {
     padding: 4rem 0;
 }
 
-.site-main .portfolio-area .button-group button{
-    background:transparent;
-    border:none;
+.site-main .portfolio-area .button-group button {
+    background: transparent;
+    border: none;
     font: normal 900 18px/130px var(--font);
 }
 
@@ -123,13 +70,13 @@
     color: var(--primary-color);
 }
 
-.site-main .portfolio-area .button-group button + button{
+.site-main .portfolio-area .button-group button+button {
     padding-left: 3rem;
 }
 
 
-    /* portfolio images*/
-.masonry{
+/* portfolio images*/
+.masonry {
     columns: 3;
     column-gap: 16px;
     /* padding-left: 20%; */
@@ -137,48 +84,57 @@
 
 }
 
-/* ipad like screens */
-@media(max-width: 1200px){
-    .masonry{
-        columns:2;
-    }
+.masonry img:hover {
+    filter: opacity(0.8);
+    transform: scale(0.98);
+    transition: .1s ease;
+    cursor: pointer;
+}
+
+/* make sure the navbar will align correctly when resizing smaller */
+@media(max-width: 1350px) {
     .header_area .main-menu .navbar {
-        display: inline;
-       
+        /* margin: 0 auto 0 auto;
+        max-width: 94%; */
+        width: auto;
+    }
+}
+
+/* ipad like screens */
+@media(max-width: 1200px) {
+    .masonry {
+        columns: 2;
     }
 }
 
 /* smallest screens */
-@media(max-width: 992px){
-    .masonry{
-        columns:1;
+@media(max-width: 992px) {
+    .masonry {
+        columns: 1;
     }
 
-    .header_area .main-menu .navbar {
-        display: inline;
-       
-    }
-
-    .site-main .portfolio-area .button-group button{
+    .site-main .portfolio-area .button-group button {
         /* font-size: 16px; */
         /* color: chartreuse; */
         font: normal 900 18px/50px var(--font);
     }
-    .site-main .portfolio-area .button-group button + button{
+
+    .site-main .portfolio-area .button-group button+button {
         padding-left: 0.2rem;
     }
 
 }
-.masonry .grid-images{
+
+.masonry .grid-images {
     /* display: inline-block; */
     margin-bottom: 16px;
     position: relative;
     /* padding: 5%; */
-     /* box-shadow: 5px 5px; */
+    /* box-shadow: 5px 5px; */
 
 }
 
-.masonry .grid-images img{
+.masonry .grid-images img {
     width: 100%;
     /* height:100%; */
     /* box-shadow: 3px 3px 5px -4px #c4437d; */
@@ -191,15 +147,16 @@
 /* End Portfolio area */
 
 /* About me area */
-.about-image{
+.about-image {
     width: 500px;
     display: block;
     margin: auto;
     /* padding-left: 100px; */
 }
 
-.about-area .email{
+.about-area .email {
     color: var(--primary-color);
     text-decoration: none;
 }
+
 /* End of About me area */
