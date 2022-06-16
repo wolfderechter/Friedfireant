@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- custom css file, overrides bootstrap-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/masonry.css">
 
 </head>
 <body>
@@ -17,11 +18,12 @@
     <!-- Start header area-->
     <header class="header_area">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light" id="nav">
                 <div class="container-fluid">
                   <a class="logo" href="index.html"><img src="./img/Logo.png" alt="logo" height="100"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <button class="icon navbar-toggler collapsed" id="navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                       <div class="me-auto"></div>
@@ -91,6 +93,10 @@
             </div>
         </div>
 
+        <div id="popup">
+          <img src="" alt="">
+        </div>
+
 
 
         </div>
@@ -107,6 +113,9 @@
 
     <!-- Bootstrap js file -->
     <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/nav.js"></script>
+    <script src="./js/masonry.js"></script>
 
 </body>
 </html>

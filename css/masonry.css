@@ -1,0 +1,44 @@
+/* photo gallery slideshow */
+#popup {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* transform: translateY(-100%); */
+    transition: 500ms transform;
+    visibility: hidden;
+    overflow: scroll;
+}
+
+#popup img {
+    max-width: 30%;
+    background-color: rgba(255, 255, 255);
+    cursor: zoom-in;
+}
+
+#popup img.enlarged {
+    cursor: zoom-out;
+    max-width: 90%;
+    top: 0;
+    position: absolute;
+}
+
+@media(max-width: 992px) {
+
+    #popup img {
+        max-width: 90%;
+    }
+
+    #popup img.enlarged {
+        max-width: 150%;
+    }
+
+
+}

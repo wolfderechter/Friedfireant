@@ -2,60 +2,65 @@
 @import url(fonts.css);
 
 /* Global classes */
-.title-text{
+.title-text {
     font: normal bold 50px/ 72px var(--font);
 }
 
 /* Buttons */
-.button{
+.button {
     padding: .8rem 2.2rem;
-    font:normal 900 16px/20px var(--font);
+    font: normal 900 16px/20px var(--font);
     position: relative;
     border: 3px solid transparent;
     border-radius: 4px;
+    width: 100%;
 }
 
-.button.primary-button{
+.button.primary-button {
     background: var(--gradient-color);
     background-clip: padding-box;
-    color:whitesmoke;
+    color: whitesmoke;
     transition: background .6s ease;
     box-shadow: var(--box-shadow);
 }
 
-.button.primary-button:hover{
-    background:whitesmoke;
+.button.primary-button:hover {
+    background: whitesmoke;
     background-clip: padding-box;
-    color:black;
+    color: black;
 }
 
-.button.primary-button::after, .button.secondary-button::after{
+.button.primary-button::after, .button.secondary-button::after {
     position: absolute;
-    top: -2px; left:-2px;
-    bottom: -2px; right:-2px;
-    background:var(--gradient-color);
-    content:'';
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: '';
     z-index: -1;
     border-radius: 4px;
 }
 
-.button.secondary-button{
-    background:white;
+.button.secondary-button {
+    background: white;
     background-clip: padding-box;
     transition: background .6s ease;
 }
 
-.button.secondary-button:hover{
+.button.secondary-button:hover {
     background: var(--gradient-color);
     color: whitesmoke;
     box-shadow: var(--box-shadow);
 }
 
-.title-h1{
+.title-h1 {
     font: normal bold 43px/ 40px var(--font);
 }
 
-p.para{
+.para {
     color: var(--text-color);
     font: normal 900 16px/ 25px var(--font);
+    /* max-width: 90%; */
+
 }

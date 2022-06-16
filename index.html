@@ -11,21 +11,20 @@
     <!-- custom css file, overrides bootstrap-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/masonry.css">
-    <!-- Photoswipe plugin -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.2.2/photoswipe.min.css" integrity="sha512-aKJqqX25Ch6C/Gae4xBq5gDKhUS2QcNrPoAxqy4fbLr9CqGq7uo/i0aRuti1TUYpZxjXuOr90cTP/aD9WY8CLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
     
     <!-- Start header area-->
     <header class="header_area">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light" id="nav">
                 <div class="container-fluid">
                   <a class="logo" href="index.html"><img src="./img/Logo.png" alt="logo" height="100"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <button class="icon navbar-toggler collapsed" id="navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
                   </button>
+
                   <div class="collapse navbar-collapse" id="navbarNav">
                       <div class="me-auto"></div>
                     <ul class="navbar-nav">
@@ -38,12 +37,6 @@
                       <li class="nav-item">
                         <a class="nav-link" href="aboutme.html">About Me</a>
                       </li>
-                      <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                      </li> -->
-                      <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li> -->
                     </ul>
                   </div>
                 </div>
@@ -160,10 +153,11 @@
                 <img src="./img/portfolio/24.webp" alt="Portfolio image">
             </div>
 
-    
-
         </div>
-
+        <!-- predefined popup that we will fill when an image is clicked -->
+        <div id="popup">
+          <img src="" alt="">
+        </div>
 
 
         </div>
@@ -184,6 +178,7 @@
     <!-- Custom js file -->
     <script src="./js/main.js"></script>
     <script src="./js/masonry.js"></script>
+    <script src="./js/nav.js"></script>
 
 </body>
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- custom css file, overrides bootstrap-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/masonry.css">
 
 </head>
 <body>
@@ -17,11 +18,12 @@
     <!-- Start header area-->
     <header class="header_area">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light" id="nav">
                 <div class="container-fluid">
                   <a class="" href="index.html"><img src="./img/Logo.png" alt="logo" height="100"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  <button class="icon navbar-toggler collapsed" id="navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                       <div class="me-auto"></div>
@@ -56,20 +58,16 @@
               </h2>
               <div class="paragraph py-4 w-75">
                 <p class="para">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam omnis consequatur iste nihil at ipsa numquam eius quisquam qui, sint, sapiente error voluptatibus minus! Aliquid ducimus rerum illum quae soluta?
+                  Hi I'm an illustrator / concept artist. I mainly do 2D drawings but I'm also capable of basic 3D. 
                 </p>
-                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nesciunt!</p>
+                <p class="para">I've been passionate about art and drawing since I was little. In 2021 I graduated as a concept artist and have been expanding my portfolio ever since. On this portfolio website you can catch a glimpse of it.</p>
+              
+                <br>
+                <p class="para">I'm currently available for freelance work on projects big and small! Feel free to email - <a class="email" href="mailto:friedfireant@gmail.com">friedfireant@gmail.com</a>.
+                </p>
+                <a type="button" href="mailto:friedfireant@gmail.com" class="btn button primary-button">Contact me</a>
+
               </div>
-
-              <p class="para">For all info, collaborations and wholesale inquiries, contact
-                friedfireant@gmail.com</p>
-
-
-                <p class="para">I'm available for freelance work on projects big and small! Feel free to email - <a class="email" href="mailto:friedfireant@gmail.com">friedfireant@gmail.com</a>.
-                </p>
-
-              <button type="button" class="btn button primary-button">Download CV</button>
-              <a type="button" href="mailto:friedfireant@gmail.com" class="btn button secondary-button">Contact me</a>
 
             </div>
 
@@ -96,5 +94,9 @@
 
     <!-- Bootstrap js file -->
     <script src="./js/bootstrap.min.js"></script>
+
+    <script src="./js/nav.js"></script>
+    <script src="./js/masonry.js"></script>
+
 </body>
 </html>
