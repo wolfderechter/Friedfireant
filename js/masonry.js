@@ -12,8 +12,14 @@ masonryImages.forEach(image => {
         // init popup
         let container = document.body;
 
+        // image.style.scale = '1.5'
+        // image.style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+
         popup.setAttribute("id", "popup");
         popup.style.cssText = 'visibility: visible;';
+        popup.style.opacity = '1';
+        // popup.style.transition = 'all 0.4s ease-in';
+        popup.style.transition = 'all 0.4s ease-out';
         popup.setAttribute("onclick", "closeImg()");
 
         popupImg.setAttribute("src", image.src);
@@ -25,7 +31,10 @@ masonryImages.forEach(image => {
 function closeImg() {
     if ($(event.target).is('div')) {
         popupElem = document.querySelector('#popup');
-        popupElem.style.transform = 'translateY(-200%)';
+        // popupElem.style.transform = 'translateY(-200%)';
+        popupElem.style.opacity = '0';
+        popupElem.style.visibility = 'hidden'
+        popupElem.style.transition = 'all 0.4s ease-out';
         popupElem.firstChild.src = ''
     }
 }

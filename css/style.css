@@ -11,6 +11,15 @@
 /* .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
 } */
+body {
+    /* background-image: linear-gradient(rgba(255, 255, 255, 1) 1%, rgb(245, 236, 121) 10%, rgb(255, 246, 123) 20%, yellow);    */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: 100%; */
+    /* background-color: rgb(255, 222, 247); */
+    /* background-color: rgb(220, 255, 231); */
+    /* background-color: rgba(135, 243, 253, 0.484); */
+}
 
 .header_area .main-menu .navbar {
     margin: 0 auto 0 auto;
@@ -151,9 +160,10 @@ nav.active .icon .line2 {
 }
 
 .masonry img:hover {
-    filter: opacity(0.8);
-    transform: scale(0.98);
-    transition: .1s ease;
+    /* filter: opacity(0.8); */
+    /* transform: scale(0.98); */
+    transform: translateY(-10px);
+    transition: 0.2s ease;
     cursor: pointer;
 }
 
