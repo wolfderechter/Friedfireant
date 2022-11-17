@@ -1,157 +1,160 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FriedFireAnt</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FriedFireAnt</title>
 
-    <!-- Bootstrap css file -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- custom css file, overrides bootstrap-->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/masonry.css">
+  <!-- Bootstrap css file -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- custom css file, overrides bootstrap-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/masonry.css">
 </head>
+
 <body>
-    
-    <!-- Start header area-->
-    <header class="header_area">
-        <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light" id="nav">
-                <div class="container-fluid">
-                  <a class="logo" href="index.html"><img src="./img/Logo.png" alt="logo" height="100"></a>
-                  <button class="icon navbar-toggler collapsed" id="navToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="line line1"></div>
-                    <div class="line line2"></div>
-                  </button>
 
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                      <div class="me-auto"></div>
-                    <ul class="navbar-nav">
-                      <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="index.html">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="commisionedwork.html">Commisioned Work</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="aboutme.html">About Me</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+  <!-- Start header area-->
+  <header class="header_area">
+    <div class="main-menu">
+      <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+        <div class="container-fluid">
+          <a class="logo" href="index.html"><img src="./img/Logo.webp" alt="logo" height="100"></a>
+          <button class="icon navbar-toggler collapsed" id="navToggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="me-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="commisionedwork.html">Commisioned Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
-    <!-- End header area-->
+      </nav>
+    </div>
+  </header>
+  <!-- End header area-->
 
-    <!-- Start main area-->
-    <main class="site-main">
+  <!-- Start main area-->
+  <main class="site-main">
 
-      <!-- Portfolio area -->
-      <section class="portfolio-area">
-        <div class="container">
-          <div class="portfolio-title pb-5">
-            <h1 class="title-h1">Portfolio</h1>
+    <!-- Portfolio area -->
+    <section class="portfolio-area">
+      <div class="container">
+        <div class="portfolio-title pb-5">
+          <h1 class="title-h1">Portfolio</h1>
+        </div>
+
+        <div class="button-group" id="myBtnContainer">
+          <button type="button" class="filter" onclick="filterSelection('all')">All</button>
+          <button type="button" class="filter" onclick="filterSelection('character-art')">Character art</button>
+          <button type="button" class="filter" onclick="filterSelection('studies')">Studies</button>
+          <button type="button" class="filter" onclick="filterSelection('concept-art')">Concept art</button>
+          <button type="button" class="filter" onclick="filterSelection('paintings')">Paintings</button>
+        </div>
+
+        <!-- images -->
+        <div class="masonry">
+          <div class="grid-images character-art">
+            <img src="./img/portfolio/1.webp" alt="Portfolio image">
           </div>
 
-          <div class="button-group" id="myBtnContainer">
-            <button type="button" class="filter" onclick="filterSelection('all')">All</button>
-            <button type="button" class="filter" onclick="filterSelection('character-art')">Character art</button>
-            <button type="button" class="filter" onclick="filterSelection('studies')">Studies</button>
-            <button type="button" class="filter" onclick="filterSelection('concept-art')">Concept art</button>
-            <button type="button" class="filter" onclick="filterSelection('paintings')">Paintings</button>
+          <div class="grid-images studies">
+            <img src="./img/portfolio/2.webp" alt="Portfolio image">
           </div>
 
-          <!-- images -->
-          <div class="masonry">
-            <div class="grid-images character-art"  >
-                <img src="./img/portfolio/1.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images character-art">
+            <img src="./img/portfolio/3.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images studies">
-                <img src="./img/portfolio/2.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images concept-art">
+            <img src="./img/portfolio/4.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images character-art">
-                <img src="./img/portfolio/3.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images character-art">
+            <img src="./img/portfolio/5.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images concept-art">
-                <img src="./img/portfolio/4.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images concept-art">
+            <img src="./img/portfolio/6.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images character-art">
-                <img src="./img/portfolio/5.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images concept-art">
+            <img src="./img/portfolio/7.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images concept-art">
-                <img src="./img/portfolio/6.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images concept-art">
+            <img src="./img/portfolio/9.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images concept-art">
-                <img src="./img/portfolio/7.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images character-art">
+            <img src="./img/portfolio/11.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images concept-art">
-                <img src="./img/portfolio/9.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images character-art">
+            <img src="./img/portfolio/12.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images character-art">
-                <img src="./img/portfolio/11.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images paintings">
+            <img src="./img/portfolio/13.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images character-art">
-                <img src="./img/portfolio/12.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images studies">
+            <img src="./img/portfolio/14.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images paintings">
-                <img src="./img/portfolio/13.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images concept-art">
+            <img src="./img/portfolio/15.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images studies">
-                <img src="./img/portfolio/14.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images studies">
+            <img src="./img/portfolio/16.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images concept-art">
-                <img src="./img/portfolio/15.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images paintings">
+            <img src="./img/portfolio/17.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images studies">
-                <img src="./img/portfolio/16.png" alt="Portfolio image">
-            </div>
+          <div class="grid-images concept-art">
+            <img src="./img/portfolio/18.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images paintings">
-                <img src="./img/portfolio/17.webp" alt="Portfolio image">
-            </div>
+          <div class="grid-images paintings">
+            <img src="./img/portfolio/19.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images concept-art">
-                <img src="./img/portfolio/18.webp" alt="Portfolio image">
-            </div>
+          <div class="grid-images character-art">
+            <img src="./img/portfolio/20.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images paintings">
-                <img src="./img/portfolio/19.webp" alt="Portfolio image">
-            </div>
+          <div class="grid-images studies">
+            <img src="./img/portfolio/21.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images character-art">
-                <img src="./img/portfolio/20.webp" alt="Portfolio image">
-            </div>
+          <div class="grid-images character-art">
+            <img src="./img/portfolio/22.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images studies">
-                <img src="./img/portfolio/21.webp" alt="Portfolio image">
-            </div>
+          <div class="grid-images character-art">
+            <img src="./img/portfolio/23.webp" alt="Portfolio image">
+          </div>
 
-            <div class="grid-images character-art">
-                <img src="./img/portfolio/22.webp" alt="Portfolio image">
-            </div>
-
-            <div class="grid-images character-art">
-                <img src="./img/portfolio/23.webp" alt="Portfolio image">
-            </div>
-
-            <div class="grid-images concept-art">
-                <img src="./img/portfolio/24.webp" alt="Portfolio image">
-            </div>
+          <div class="grid-images concept-art">
+            <img src="./img/portfolio/24.webp" alt="Portfolio image">
+          </div>
 
         </div>
         <!-- predefined popup that we will fill when an image is clicked -->
@@ -160,25 +163,26 @@
         </div>
 
 
-        </div>
-      </section>
-      <!-- End portfolio area -->
+      </div>
+    </section>
+    <!-- End portfolio area -->
 
-    </main>
-    <!-- End main area-->
+  </main>
+  <!-- End main area-->
 
 
 
-    <!-- Jquery js file -->
-    <script src="./js/jquery.3.6.0.js"></script>
+  <!-- Jquery js file -->
+  <script src="./js/jquery.3.6.0.js"></script>
 
-    <!-- Bootstrap js file -->
-    <script src="./js/bootstrap.min.js"></script>
+  <!-- Bootstrap js file -->
+  <script src="./js/bootstrap.min.js"></script>
 
-    <!-- Custom js file -->
-    <script src="./js/main.js"></script>
-    <script src="./js/masonry.js"></script>
-    <script src="./js/nav.js"></script>
+  <!-- Custom js file -->
+  <script src="./js/main.js"></script>
+  <script src="./js/masonry.js"></script>
+  <script src="./js/nav.js"></script>
 
 </body>
+
 </html>
